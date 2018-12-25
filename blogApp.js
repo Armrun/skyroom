@@ -80,5 +80,5 @@ var server = app.listen(9191, function (){
 	// 获得监听的信息 
 	var host = server.address().address
 	var port = server.address().port
-	console.log("SKyroom正在运行, 访问地址为< http://%s:%s >", host, port)
+	console.log("SKyroom正在运行, 访问地址", host)
 })
