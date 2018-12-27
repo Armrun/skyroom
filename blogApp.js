@@ -63,6 +63,7 @@ app.post('/api/comment/all', function(request, response){
 	r = JSON.stringify(matchComment)
 	response.send(r)
 })
+
 app.post('/api/comment/add', function(request, response){
 	console.log('评论添加请求', request.body) 
 	var form = request.body

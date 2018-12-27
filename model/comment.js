@@ -11,7 +11,7 @@ const loadBlogs = function() {
 }
 
 const ModelComment = function(form) {
-    this.author = form.author || ''
+    this.author = form.author || 'Anonym'
     this.content = form.content || ''
     this.blogId = form.blogId || ''
     this.created_time = Math.floor(new Date() / 1000)
