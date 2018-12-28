@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="img/R.png" type="image/x-icon">
 
     <title>Clean Blog - Start Bootstrap Theme</title>
 
@@ -32,6 +33,12 @@
         margin-top: 3px;
         font-size: 15px;
       }
+      #id-button-submit {
+        background-color: darkseagreen;
+        border: none;
+        margin-top: 4px;
+        color: #fff;
+      }
     </style>
 
   </head>
@@ -41,7 +48,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="index.html">李润全的网络日志</a>
+        <a class="navbar-brand" href="index.html">Runquan Li's Blog</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -63,7 +70,7 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="page-heading">
-              <h1>Host</h1>
+              <h1>~OPEN SESAME~</h1>
               <span class="subheading">Skyroom</span>
             </div>
           </div>
@@ -75,17 +82,16 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <input type="text" style="width: 40%;"> <input type="text" placeholder="t" style="width: 59%;">
-          <textarea id="pen"></textarea>
+          <input type="text" id="id-input-author" style="width: 40%;"> <input type="text" placeholder="t" id="id-input-title" style="width: 59%;">
+          <textarea id="id-input-content"></textarea>
          
-
             <div class="control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
-                <input  class="form-control" placeholder="Open sesame" id="id-input-incantation" required data-validation-required-message="Open sesame?">
+              <div class="form-group col-xs-9 floating-label-form-group controls">
+                <input  class="form-control" placeholder="INCATATION" id="id-input-incantation">
               </div>
             </div>
-            <div class="form-group">
-              <button class="btn btn-primary" id="sendMessageButton">Send</button>
+            <div >
+              <button type="button" class="btn" id="id-button-submit">Send</button>
             </div>
         </div>
       </div>

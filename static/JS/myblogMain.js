@@ -8,25 +8,6 @@ var blogTemplate = function(blog) {
     var content = blog.content
     var d = new Date(blog.created_time * 1000)
     var time = d.toLocaleString()
-    // <div class="blog-cell">
-    //     <div class="">
-    //         <a class="blog-title" href="#" data-id="${id}">
-    //             ${title}
-    //         </a>
-    //     </div>
-    //     <div class="">
-    //         <span>${author}</span> @ <time>${time}</time>
-    //     </div>
-    //     <div class="blog-comments" data-id="${id}">
-    //         <div class='new-comment'>
-    //             <input class='comment-blog-id' type=hidden value="${id}">
-    //             <input class='comment-author' value="">
-    //             <input class='comment-content' value="">
-    //             <button class='comment-add'>添加评论</button>
-    //             <button class='comment-all'>查看所有评论</button>
-    //         </div>
-    //     </div>
-    // </div>
     var t = `
     <div class="post-preview">
             <a href="javascript:void(0)">
@@ -50,7 +31,7 @@ var log = function() {
 }
 
 const insertBlogAll = function(blogs) {
-    for (var i = 0; i < blogs.length; i++) {
+    for (var i = blogs.length-1; i >= 0; i--) {
         var b = blogs[i]
         var t = blogTemplate(b)
         // 把数据写入 .gua-blogs 中
@@ -207,7 +188,7 @@ var __main = function() {
 
 var readMoreinsert = function(allmore) {
     var t = `
-    <header class="masthead" style="background-image: url('img/home-bg.jpg')" data-id=${allmore.id}>
+    <header class="masthead" style="background-image: url('img/blog-bg.jpg')" data-id=${allmore.id}>
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -226,7 +207,7 @@ var readMoreinsert = function(allmore) {
             <div class="row">
               <div class="col-lg-8 col-md-10 mx-auto" id="id-div-blogMain">
                 <div class="post-preview">
-                    <h3 class="post-subtitle">
+                    <h3 id="id-h2-blogmore">
                       ${allmore.content}
                     </h3>
                     <div id="id-div-inscribe">

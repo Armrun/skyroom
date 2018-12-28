@@ -49,7 +49,7 @@ const routeComment = require('./model/comment')
 app.post('/api/comment/all', function(request, response){
 	console.log('评论请求数据类型', request.body.blogId) 
 	var cId = request.body.blogId
-	var comment = routeComment.data
+	var commsent = routeComment.data
 	// console.log('评论all', comment) 
 	var matchComment = []
 	for (var i = 0; i < comment.length; i++) {
