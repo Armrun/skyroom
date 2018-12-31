@@ -1,0 +1,30 @@
+.hidden {
+  display: none;
+}
+#comment-content {
+  height: 130px;
+}
+#id-div-inscribe {
+  background-color: #72b9c7;
+  border-radius: 11px;
+  padding: 10px;
+  margin-top: 46px;
+  font-size: 16px;
+  font-weight: lighter; 
+}
+.blogmoreKiller {
+  position: fixed;
+  right: 6%;
+  top: 71%;
+  box-shadow: 2px 2px 5px 1px #88C;
+}
+.comment-list {
+  font-size: 15px;
+}
+#comment-time {
+  margin: 23px 0;
+}
+#id-h2-blogmore {
+  font-size: 20px;
+font-weight: 300;
+}

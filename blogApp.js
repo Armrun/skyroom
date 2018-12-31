@@ -13,9 +13,6 @@ app.use(expressExample.static('static'))
 
 const sendHeml = function(path, response) {
 	var fs = require('fs')
-	// var options = {
-	// 	encoding: 'utf-8'
-	// }
 	var indexHtml = fs.readFileSync(path, 'utf-8')
 	response.send(indexHtml)
 }
@@ -49,7 +46,7 @@ const routeComment = require('./model/comment')
 app.post('/api/comment/all', function(request, response){
 	console.log('评论请求数据类型', request.body.blogId) 
 	var cId = request.body.blogId
-	var commsent = routeComment.data
+	var comment = routeComment.data
 	// console.log('评论all', comment) 
 	var matchComment = []
 	for (var i = 0; i < comment.length; i++) {
@@ -67,10 +64,6 @@ app.post('/api/comment/all', function(request, response){
 app.post('/api/comment/add', function(request, response){
 	console.log('评论添加请求', request.body) 
 	var form = request.body
-	// var cId = request.body.blogId
-	// var comment = routeComment.data
-	// console.log('comment的bolgid', comment[i]['blog_id'], typeof(comment[i]['blog_id']))
-	// console.log('****评论匹配成功')
 	newComment = routeComment.new(form)
 	r = JSON.stringify(newComment)
 	response.send(r)
