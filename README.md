@@ -1,5 +1,5 @@
 # skyroom
-
+[访问此站](http://www.skyroom.club/blog)
 
 
 - 支持博主在线添加博文，游客评论功能
