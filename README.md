@@ -13,5 +13,5 @@
 ----------
 ![](https://raw.githubusercontent.com/Armrun/skyroom/master/blog1.PNG)
 
-![](https://raw.githubusercontent.com/Armrun/skyroom/master/blog2.PNG)
+![](https://raw.githubusercontent.com/Armrun/skyroom/master/blog2.jpg)
 
